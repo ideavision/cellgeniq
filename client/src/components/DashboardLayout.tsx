@@ -1,4 +1,4 @@
-import { Activity, Beaker, Building2, FileCheck, FlaskConical, LayoutDashboard, Settings, Shield, Users } from "lucide-react";
+import { Activity, Beaker, Building2, FileCheck, FlaskConical, GitBranch, LayoutDashboard, Settings, Shield, ShieldCheck, Users } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Button } from "./ui/button";
 import { ScrollArea } from "./ui/scroll-area";
@@ -8,12 +8,13 @@ interface DashboardLayoutProps {
 }
 
 const navigation = [
-  { name: "Dashboard", href: "/", icon: LayoutDashboard },
+  { name: "Workflow Overview", href: "/", icon: GitBranch },
+  { name: "Dashboard", href: "/home", icon: LayoutDashboard },
   { name: "Patient Management", href: "/patients", icon: Users },
-  { name: "AI Analysis", href: "/ai-analysis", icon: Activity },
+  { name: "Leukapheresis", href: "/leukapheresis", icon: Activity },
   { name: "Manufacturing", href: "/manufacturing", icon: Building2 },
   { name: "Quality Control", href: "/quality-control", icon: FileCheck },
-  { name: "Research Lab", href: "/research", icon: FlaskConical },
+  { name: "Quality Assurance", href: "/quality-assurance", icon: ShieldCheck },
   { name: "API Integration", href: "/api", icon: Beaker },
   { name: "Regulatory & Compliance", href: "/compliance", icon: Shield },
 ];

@@ -7,8 +7,11 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Patients from "./pages/Patients";
 import AIAnalysis from "./pages/AIAnalysis";
+import Leukapheresis from "./pages/Leukapheresis";
 import Manufacturing from "./pages/Manufacturing";
 import QualityControl from "./pages/QualityControl";
+import QualityAssurance from "./pages/QualityAssurance";
+import Workflow from "./pages/Workflow";
 import Research from "./pages/Research";
 import API from "./pages/API";
 import Compliance from "./pages/Compliance";
@@ -16,11 +19,14 @@ import Compliance from "./pages/Compliance";
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
+      <Route path={"/"} component={Workflow} />
+      <Route path={"/home"} component={Home} />
       <Route path={"/patients"} component={Patients} />
+      <Route path={"/leukapheresis"} component={Leukapheresis} />
       <Route path={"/ai-analysis"} component={AIAnalysis} />
       <Route path={"/manufacturing"} component={Manufacturing} />
       <Route path={"/quality-control"} component={QualityControl} />
+      <Route path={"/quality-assurance"} component={QualityAssurance} />
       <Route path={"/research"} component={Research} />
       <Route path={"/api"} component={API} />
       <Route path={"/compliance"} component={Compliance} />

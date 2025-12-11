@@ -8,10 +8,10 @@ import { Activity, Calendar, FileText, Heart, MessageSquare, ThermometerIcon, Us
 import { useState } from "react";
 
 const patients = [
-  { id: 1, name: "Eleanor Vance", age: 68, condition: "Osteoarthritis", status: "Active", progress: 75 },
-  { id: 2, name: "Marcus Chen", age: 54, condition: "Multiple Myeloma", status: "Monitoring", progress: 90 },
-  { id: 3, name: "Sarah Johnson", age: 42, condition: "Lymphoma", status: "Active", progress: 60 },
-  { id: 4, name: "David Park", age: 61, condition: "Leukemia", status: "Active", progress: 45 },
+  { id: 1, name: "Patient-1", age: 68, condition: "Osteoarthritis", status: "Active", progress: 75 },
+  { id: 2, name: "Patient-2", age: 54, condition: "Multiple Myeloma", status: "Monitoring", progress: 90 },
+  { id: 3, name: "Patient-3", age: 42, condition: "Lymphoma", status: "Active", progress: 60 },
+  { id: 4, name: "Patient-4", age: 61, condition: "Leukemia", status: "Active", progress: 45 },
 ];
 
 export default function Patients() {
@@ -264,10 +264,10 @@ export default function Patients() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-4">
-                      {[
-                        { name: "Dr. Lee", role: "Lead Physician", message: "Hi, I completed the initial assessment for patient care plan." },
-                        { name: "Nurse Sara", role: "Care Coordinator", message: "Hi Loos. Nurse I oams to patient career and make your patient care sorry." },
-                      ].map((member, i) => (
+                  {[
+                    { name: "Doctor-1", role: "Lead Physician", message: "Hi, I completed the initial assessment for patient care plan." },
+                    { name: "Doctor-2", role: "Care Coordinator", message: "Patient care coordination completed successfully." },
+                  ].map((member, i) => (
                         <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-muted/30">
                           <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                             <User className="w-5 h-5 text-primary" />

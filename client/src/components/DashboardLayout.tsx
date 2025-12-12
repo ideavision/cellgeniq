@@ -1,4 +1,4 @@
-import { Activity, Beaker, Building2, FileCheck, FlaskConical, GitBranch, LayoutDashboard, Settings, Shield, ShieldCheck, Users } from "lucide-react";
+import { Activity, Beaker, Building2, Cpu, FileCheck, FlaskConical, GitBranch, LayoutDashboard, Settings, Shield, ShieldCheck, Users } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { Button } from "./ui/button";
 import { ScrollArea } from "./ui/scroll-area";
@@ -13,6 +13,7 @@ const navigation = [
   { name: "Patient Management", href: "/patients", icon: Users },
   { name: "Leukapheresis", href: "/leukapheresis", icon: Activity },
   { name: "Manufacturing", href: "/manufacturing", icon: Building2 },
+  { name: "Equipment Catalog", href: "/equipment", icon: Cpu },
   { name: "Quality Control", href: "/quality-control", icon: FileCheck },
   { name: "Quality Assurance", href: "/quality-assurance", icon: ShieldCheck },
   { name: "API Integration", href: "/api", icon: Beaker },

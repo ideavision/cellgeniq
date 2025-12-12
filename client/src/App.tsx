@@ -15,6 +15,7 @@ import Workflow from "./pages/Workflow";
 import Research from "./pages/Research";
 import API from "./pages/API";
 import Compliance from "./pages/Compliance";
+import Equipment from "./pages/Equipment";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
       <Route path={"/research"} component={Research} />
       <Route path={"/api"} component={API} />
       <Route path={"/compliance"} component={Compliance} />
+      <Route path={"/equipment"} component={Equipment} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
